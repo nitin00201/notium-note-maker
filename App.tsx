@@ -1,18 +1,13 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from "expo-status-bar";
+import LoginScreen from "screens/auth/LoginScreen";
 
-import './global.css';
-import { Text, View } from 'react-native';
+import "./global.css";
 
 export default function App() {
   return (
     <>
-    <ScreenContent title='name' path='/'>
-            <View>
-        <Text>Helo</Text>
-      </View>
-      </ScreenContent>
-
+      <LoginScreen />
+      <StatusBar style="auto" />
     </>
   );
 }
